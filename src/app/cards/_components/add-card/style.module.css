@@ -1,0 +1,25 @@
+.buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.formHeader {
+    padding: 10px 5px;
+}

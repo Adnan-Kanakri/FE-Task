@@ -1,0 +1,12 @@
+.select {
+    width: 30% !important;
+}
+
+.clearIcon {
+    color: red !important;
+}
+
+.selectLabel {
+    line-height: 0.4375em !important;
+    overflow: visible !important;
+}

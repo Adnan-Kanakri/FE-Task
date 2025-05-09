@@ -1,0 +1,76 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+
+.content {
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.sidebar {
+    transition: all 300ms ease-in-out;
+}
+
+.sidebarCollapsed {
+    width: 60px;
+}
+
+.sidebarExpanded {
+    width: 270px;
+}
+
+.toggleButton {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 1px solid #e5e7eb;
+    transition: all 300ms;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    z-index: 50;
+    opacity: 0;
+}
+
+.toggleButton:hover {
+    background-color: #f9fafb;
+}
+
+.group:hover .toggleButton {
+    opacity: 1;
+}
+
+.toggleIcon {
+    transition: transform 300ms;
+}
+
+.toggleIconRotated {
+    transform: rotate(180deg);
+}
+
+.mainContent {
+    transition: all 300ms ease-in-out;
+    position: relative;
+    height: 100dvh;
+    background-color: #FAFAFA;
+    padding-top: 3rem;
+}
+
+.mainContentCollapsed {
+    width: calc(100% - 60px);
+}
+
+.mainContentExpanded {
+    width: calc(100% - 270px);
+}
